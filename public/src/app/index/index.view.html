@@ -1,0 +1,13 @@
+<div>
+  <ui-gmap-google-map center='map.center' zoom='map.zoom' control="map.control">
+    <ui-gmap-polyline ng-repeat="p in points"  path='p'
+      >
+    </ui-gmap-polyline>
+    <ui-gmap-markers
+      models='markers'
+      idKey='id'
+      coords="'coords'"
+      >
+    </ui-gmap-markers>
+  </ui-gmap-google-map>
+</div>

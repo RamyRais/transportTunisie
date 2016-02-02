@@ -1,0 +1,99 @@
+{
+  "stations":[
+    {
+      "lat": 36.744889,
+      "lng": 10.243465,
+      "stopover": true
+    },
+    {
+      "lat": 36.744579,
+      "lng": 10.242048,
+      "stopover": false
+    },
+    {
+      "lat": 36.743268,
+      "lng": 10.242745,
+      "stopover": false
+    },
+    {
+      "lat": 36.742817,
+      "lng": 10.240483,
+      "stopover": true
+    },
+    {
+      "lat": 36.741456,
+      "lng": 10.240006,
+      "stopover": true
+    },
+    {
+      "lat": 36.739658,
+      "lng": 10.242226,
+      "stopover": true
+    },
+    {
+      "lat": 36.739543,
+      "lng": 10.245932,
+      "stopover": true
+    },
+    {
+      "lat": 36.742513,
+      "lng": 10.250240,
+      "stopover": true
+    },
+    {
+      "lat": 36.748496,
+      "lng": 10.251416,
+      "stopover": true
+    },
+    {
+      "lat": 36.756914,
+      "lng": 10.243809,
+      "stopover": true
+    },
+    {
+      "lat": 36.761804,
+      "lng": 10.232170,
+      "stopover": true
+    },
+    {
+      "lat": 36.764883,
+      "lng": 10.224816,
+      "stopover": true
+    },
+    {
+      "lat": 36.767972,
+      "lng": 10.217316,
+      "stopover": true
+    },
+    {
+      "lat": 36.772243,
+      "lng": 10.207103,
+      "stopover": true
+    },
+    {
+      "lat": 36.779931,
+      "lng": 10.196662,
+      "stopover": true
+    },
+    {
+      "lat": 36.783338,
+      "lng": 10.192524,
+      "stopover": true
+    },
+    {
+      "lat": 36.788678,
+      "lng": 10.186507,
+      "stopover": true
+    },
+    {
+      "lat": 36.790677,
+      "lng": 10.180351,
+      "stopover": true
+    },
+    {
+      "lat": 36.796228,
+      "lng": 10.179686,
+      "stopover": true
+    }
+  ]
+}
