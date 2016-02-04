@@ -11,7 +11,7 @@ if(env === 'production') {
 var server = require('./router'),
   config = require(configPath);
 
-var serve = server.listen(config.port, function() {
+var serve = server.listen(process.env.PORT || config.port, function() {
   var host = serve.address().address;
   var port = serve.address().port;
   if (host === '::') {
