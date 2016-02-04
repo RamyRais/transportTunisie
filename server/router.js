@@ -23,8 +23,9 @@ if (env === 'development') {
     res.sendFile(path.resolve(__dirname + '/../public/src/index.html'));
   });
 }
+//TODO change to src to dist in production done just for test but must be removed after setting the scripts
 if (env === 'production') {
-  server.use(express.static(path.resolve(__dirname + '/../public/dist'), {
+  server.use(express.static(path.resolve(__dirname + '/../public/src'), {
     maxAge: '1y',
     setHeaders: function(res, path) {
       if (mime.lookup(path) === 'text/html') {
@@ -33,7 +34,7 @@ if (env === 'production') {
     }
   }));
   server.get('/', function(req, res, next) {
-    res.sendFile(path.resolve(__dirname + '/../public/dist/index.html'), {
+    res.sendFile(path.resolve(__dirname + '/../public/src/index.html'), {
       maxAge: 0
     });
   });

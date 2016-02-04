@@ -4,10 +4,12 @@
   "description": "",
   "scripts": {
     "start": "node server/app.js",
-    "start-dev": "nodemon server/app.js"
+    "start-dev": "nodemon server/app.js",
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "dependencies": {
     "body-parser": "^1.14.2",
+    "bower": "^1.7.7",
     "express": "^4.13.4"
   },
   "devDependencies": {
