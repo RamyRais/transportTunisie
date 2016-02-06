@@ -33,4 +33,9 @@ if (env === 'production') {
   });
 }
 
+server.get('/busLines', function (req, res) {
+  const buses = require('./data/bus_lines.json');
+  res.send(buses);
+});
+
 module.exports = http;

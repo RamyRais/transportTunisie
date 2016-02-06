@@ -1,11 +1,14 @@
 angular
   .module('TransportTunApp')
   .controller('indexCtrl', ['$scope', '$http', 'uiGmapGoogleMapApi', function ($scope, $http, uiGmapGoogleMapApi) {
+    $scope.line = [];
     $http
       .get('app/data/Bus_19C.json')
       .then(function(data) {
         $scope.line = data.data;
       });
+
+
 
     uiGmapGoogleMapApi.then(function(){
       $scope.path = null;

@@ -5,15 +5,21 @@
     <title>Transport Tunisie</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/styles/css/main.css">
   </head>
   <body >
-    <div ui-view></div>
+
+    <div ng-include="'app/common/views/navbar.html'"></div>
+    <div ng-include="'app/common/views/header.html'"></div>
+    <div ui-view class="container-fluid"></div>
 
     <script src="vendor/lodash/dist/lodash.min.js"></script>
     <script src="vendor/angular/angular.min.js"></script>
     <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="vendor/oclazyload/dist/ocLazyLoad.min.js"></script>
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="vendor/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
     <script src="vendor/angular-google-maps/dist/angular-google-maps.min.js"></script>
 
