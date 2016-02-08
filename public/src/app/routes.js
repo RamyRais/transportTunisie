@@ -7,7 +7,7 @@ angular
     $stateProvider
       .state('app', {
         abstract: true,
-        templateUrl: 'app/views/layout.html'
+        templateUrl: 'app/common/views/layout.html'
       })
       .state('app.index', {
         url: '/',
@@ -26,6 +26,16 @@ angular
         resolve:{
           deps: ['$ocLazyLoad', function ($ocLazyLoad) {
             return $ocLazyLoad.load('app/components/lines/lines.controller.js');
+          }]
+        }
+      })
+      .state('app.suggest', {
+        url: '/suggest',
+        templateUrl: 'app/components/suggest/suggest.view.html',
+        controller: 'suggestCtrl',
+        resolve:{
+          deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+            return $ocLazyLoad.load('app/components/suggest/suggest.controller.js');
           }]
         }
       })
